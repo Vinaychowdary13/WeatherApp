@@ -14,7 +14,7 @@ darkMode.addEventListener("click", () => {
 let lightMode = document.getElementById("lightMode_btn");
 lightMode.addEventListener("click", () => {
     document.body.style.backgroundColor = "#dfebec";
-    document.querySelector(".forecast-section h3").style.color = "black"; // <-- reset to default
+    document.querySelector(".forecast-section h3").style.color = "#3498db"; // <-- reset to default
   });
 
 // Get 5-day forecast
