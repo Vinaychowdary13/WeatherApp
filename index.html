@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Weather App</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+</head>
+<body>
+
+   <header class="header">
+    <img src="assets/weather.png" alt="Weather Logo" class="logo">
+    <div class="search-container">
+      <input type="text" id="search_input" placeholder="Enter city name...">
+      <button id="search_btn"><i class="fas fa-search"></i></button>
+    </div>
+    <div class="theme-toggle">
+      <button id="darkMode_btn">🌙 Dark</button>
+      <button id="lightMode_btn">☀️ Light</button>
+    </div>
+  </header>
+
+  <main class="weather-main">
+    <div class="card current-weather-card">
+      <h2 class="card-title">City Name</h2>
+      <img src="assets/weather.jpeg" alt="Weather Image" id="weatherImg" class="main-weather-img">
+      <p class="temp_display">--</p>
+      <p class="card-text">Description</p>
+      <div class="unit-toggle">
+        <button id="degree_celsius">°C</button>
+        <button id="fahreinheit">°F</button>
+      </div>
+    </div>
+
+    <section id="Future_data" class="forecast-section">
+        <h3>5-Day Forecast</h3>
+        <div class="row">
+          <div class="col-12 col-sm-6 col-md-4 col-lg-2 mb-4">
+            <div class="card future-weather-card mx-auto">
+              <div class="card-body text-center">
+                <h5 class="card-title">Day 1</h5>
+                <img src="https://openweathermap.org/img/wn/01d@2x.png" alt="Weather Icon" class="weather-icon mb-2">
+                <p class="card-text">--°C</p>
+                <p class="card-text-s">Description</p>
+              </div>
+            </div>
+          </div>
+          <!-- Repeat 4 more times -->
+          <div class="col-12 col-sm-6 col-md-4 col-lg-2 mb-4">
+            <div class="card future-weather-card mx-auto">
+              <div class="card-body text-center">
+                <h5 class="card-title">Day 2</h5>
+                <img src="https://openweathermap.org/img/wn/01d@2x.png" alt="Weather Icon" class="weather-icon mb-2">
+                <p class="card-text">--°C</p>
+                <p class="card-text-s">Description</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 col-lg-2 mb-4">
+            <div class="card future-weather-card mx-auto">
+              <div class="card-body text-center">
+                <h5 class="card-title">Day 3</h5>
+                <img src="https://openweathermap.org/img/wn/01d@2x.png" alt="Weather Icon" class="weather-icon mb-2">
+                <p class="card-text">--°C</p>
+                <p class="card-text-s">Description</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 col-lg-2 mb-4">
+            <div class="card future-weather-card mx-auto">
+              <div class="card-body text-center">
+                <h5 class="card-title">Day 4</h5>
+                <img src="https://openweathermap.org/img/wn/01d@2x.png" alt="Weather Icon" class="weather-icon mb-2">
+                <p class="card-text">--°C</p>
+                <p class="card-text-s">Description</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 col-lg-2 mb-4">
+            <div class="card future-weather-card mx-auto">
+              <div class="card-body text-center">
+                <h5 class="card-title">Day 5</h5>
+                <img src="https://openweathermap.org/img/wn/01d@2x.png" alt="Weather Icon" class="weather-icon mb-2">
+                <p class="card-text">--°C</p>
+                <p class="card-text-s">Description</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+  </main>
+
+  <script src="index.js"></script>
+</body>
+</html>
